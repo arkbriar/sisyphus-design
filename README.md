@@ -14,7 +14,7 @@ Your time enters where machines can't substitute. Everything else is the hill.
 
 ## What it does
 
-`/design <requirement>` runs a multi-phase process:
+`/sisyphus-design <requirement>` runs a multi-phase process:
 
 1. **Research & Diverge** — investigates the codebase and domain, thinks from first principles, generates 2-3 fundamentally different approaches
 2. **Interrogate** — presents the critical path, approaches, and questions that reveal which approach fits your constraints
@@ -35,7 +35,7 @@ Three human touchpoints. Everything else is automated.
 ## Usage
 
 ```
-/design Distributed task queue with at-least-once delivery, backed by PostgreSQL, implemented in Rust
+/sisyphus-design Distributed task queue with at-least-once delivery, backed by PostgreSQL, implemented in Rust
 ```
 
 The design is written to `design/` in your project (e.g., `design/distributed-task-queue.md`).

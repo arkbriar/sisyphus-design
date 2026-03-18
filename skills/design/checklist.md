@@ -37,34 +37,47 @@ You have no prior context about this design. Read the design file and the origin
 **Consistency (output vs. output)**
 
 Q1. Two claims or commitments that contradict each other?
+
 Q2. Implicit dependency between parts — removing one section silently breaks another?
+
 Q3. Priority ordering that shifts or contradicts itself?
+
 Q4. Term or distinction that only makes sense against something absent from the output?
+
 Q5. For every named entity, is its relationship to every entity it interacts with explicit?
+
 Q6. For each operation, does it specify what happens — not just that it happens?
 
 **Coverage (output vs. input)**
 
 Q7. Input requirement not addressed?
+
 Q8. Input constraint violated?
+
 Q9. Assumption not stated in input? For each problem the design claims to solve, quote the specific phrase from the original requirement or approved decision log establishing it as a problem. No phrase = self-invented problem — flag it.
+
 Q10. Where input is ambiguous, does the design acknowledge ambiguity and state which interpretation it chose?
 
 **Attack (output vs. extreme conditions)**
 
 Q11. Small, realistic scenario that causes the design to fail?
+
 Q12. The single most critical assumption — if reversed, does the design still hold?
+
 Q13. At what scale does the design break? Is that scale realistic?
 
 **Minimality (output vs. simplicity)**
 
 Q14. Parts removable without affecting whether the goal is met? Check every granularity level.
+
 Q15. For each mechanism, is its problem already solved by another part, the runtime, or the environment?
+
 Q16. For each mechanism, name the simplest alternative (including "do nothing" and "defer to the environment"). If the design does not discuss why it chose this mechanism over the simpler one, fail it.
 
 **Boundary (output vs. limits)**
 
 Q17. Judgment where a differently-prompted model might reasonably disagree?
+
 Q18. Common domain failure mode not addressed? Only check within declared scope. If explicitly out-of-scope, do not flag.
 
 **Scope (output vs. input intent)**

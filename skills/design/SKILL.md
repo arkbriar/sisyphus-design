@@ -1,5 +1,5 @@
 ---
-name: design
+name: sisyphus-design
 description: Produce high-quality design documents through research, divergent thinking, and iterative refinement
 disable-model-invocation: true
 ---
