@@ -1,6 +1,6 @@
 # sisyphus-design
 
-A Claude Code plugin that produces high-quality design documents through iterative refinement.
+A skill that produces high-quality design documents through iterative refinement. Supports both Claude Code and Codex.
 
 ## Philosophy
 
@@ -27,9 +27,25 @@ Three human touchpoints. Everything else is automated.
 
 ## Install
 
+### Claude Code
+
 ```
 /plugin marketplace add arkbriar/sisyphus-design
 /plugin install sisyphus-design
+```
+
+### Codex
+
+Copy the skill into your Codex skills directory:
+
+```bash
+cp -r skills/codex-design ~/.codex/skills/sisyphus-design
+```
+
+Enable the `request_user_input` tool so the skill can pause for your input during human phases:
+
+```bash
+codex features enable default_mode_request_user_input
 ```
 
 ## Usage
@@ -38,11 +54,13 @@ Three human touchpoints. Everything else is automated.
 /sisyphus-design Distributed task queue with at-least-once delivery, backed by PostgreSQL, implemented in Rust
 ```
 
+In Codex, invoke with `$sisyphus-design` or let it trigger automatically from the description.
+
 The design is written to `design/` in your project (e.g., `design/distributed-task-queue.md`).
 
 ## Example
 
-- [DistributedTaskQueue](https://github.com/arkbriar/DistributedTaskQueue) — designed and implemented end-to-end with this plugin
+- [DistributedTaskQueue](https://github.com/arkbriar/DistributedTaskQueue) — designed and implemented end-to-end with this skill
 
 ## Reuse
 

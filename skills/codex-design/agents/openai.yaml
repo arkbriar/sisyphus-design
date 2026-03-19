@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sisyphus Design"
+  short_description: "Produce high-quality design documents"
+  default_prompt: "Use $sisyphus-design to design a system for"
