@@ -37,11 +37,9 @@ Wait for answers. User confirms, redirects, or asks follow-ups.
 
 ## Phase 2: Decisions (human)
 
-Present the decisions per the Decision Log format in [template.md](template.md).
-
-Trace one realistic example end-to-end at the decision level — what data enters, what choices apply, what comes out. Component-level state detail comes in Phase 3.
-
-Use AskUserQuestion for approval. Revise if rejected. All open questions must be answered before proceeding. If the user or the decisions reveal the requirement is more complex than initially assessed (especially if the trivial shortcut was used), return to Phase 0 for proper research.
+1. Present the decisions as conversation text per the Decision Log format in [template.md](template.md), including expanded blocks for critical path decisions and the end-to-end example trace (what data enters, what choices apply, what comes out — component-level state detail comes in Phase 3).
+2. Use AskUserQuestion to collect feedback — approve, reject, or comment. Keep the question short; do not repeat the decisions.
+3. Revise if rejected. All open questions must be answered before proceeding. If the user or the decisions reveal the requirement is more complex than initially assessed (especially if the trivial shortcut was used), return to Phase 0 for proper research.
 
 ## Phase 3: Draft & Refine (no human)
 
