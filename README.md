@@ -40,6 +40,10 @@ Three human touchpoints. Everything else is automated.
 
 The design is written to `design/` in your project (e.g., `design/distributed-task-queue.md`).
 
+## Example
+
+- [DistributedTaskQueue](https://github.com/arkbriar/DistributedTaskQueue) — designed and implemented end-to-end with this plugin
+
 ## Reuse
 
 The methodology here is a harness at the meta level — the iterative loop of draft, evaluate, fix is not specific to software design. The checklist (`skills/design/checklist.md`) can be extracted and applied to any structured document where consistency, coverage, and minimality matter.
