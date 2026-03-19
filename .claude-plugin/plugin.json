@@ -1,7 +1,7 @@
 {
   "name": "sisyphus-design",
   "description": "Design skill for Claude Code. Research, diverge, decide, draft, refine — iterative loops with fresh evaluator agents that treat every design as unfinished until proven otherwise.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "arkbriar",
     "url": "https://github.com/arkbriar"
