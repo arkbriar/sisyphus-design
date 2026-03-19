@@ -43,7 +43,7 @@ Wait for answers. User confirms, redirects, or asks follow-ups.
 
 ## Phase 3: Draft & Refine (no human)
 
-1. Draft the design using [template.md](template.md). Write to `design/<name>.md`. Derive `<name>` from the topic. Never overwrite an existing file. Where the input is ambiguous, state the ambiguity and chosen interpretation in the design. Carry the Phase 2 example trace into the Interactions section, updating it to match final component names.
+1. Draft the design using [template.md](template.md). Write to `design/<name>.md`. Derive `<name>` as `YYYY-MM-DD-<topic>` (e.g., `2026-03-19-auth`). If that file already exists, append `-2`, `-3`, etc. Where the input is ambiguous, state the ambiguity and chosen interpretation in the design. Carry the Phase 2 example trace into the Interactions section, updating it to match final component names.
 2. Self-check against [checklist.md](checklist.md), skipping procedure step 0b (baseline sketch — the author cannot objectively evaluate their own design against a baseline). Fix all issues found.
 3. Spawn a fresh evaluator agent (Agent tool). The agent must:
    - Have NO context about the design's history, decisions, or prior findings
