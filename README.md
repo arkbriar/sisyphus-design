@@ -39,7 +39,7 @@ Three human touchpoints. Everything else is automated.
 Copy the skill into your Codex skills directory:
 
 ```bash
-cp -r skills/codex-design ~/.codex/skills/sisyphus-design
+cp -r codex ~/.codex/skills/sisyphus-design
 ```
 
 Enable the `request_user_input` tool so the skill can pause for your input during human phases:
